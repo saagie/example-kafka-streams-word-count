@@ -7,7 +7,7 @@ Read records' keys as strings from an input Kafka topic, count them, log them an
 Execute ```sbt clean assembly``` at the project root directory to generate
 `./target/scala-2.12/example-kafka-streams-word-count.jar`.
 
-## Usage
+## Usage
 
 To use this app, execute this command :
 ```java -jar {file} --kafka-bootstrap-server {kafkaServer} --kafka-input-topic {producerTopic} --kafka-output-topic {outputTopic}```,
@@ -16,7 +16,7 @@ with the correct values for `{file}`, `{kafkaServer}`, `{producerTopic}` and `{o
 There is an embedded word producer in this project. You can start it by typing :
 ```java -cp {file} io.saagie.example.KafkaWordProducer --kafka-bootstrap-server {kafkaServer} --kafka-output-topic {producerTopic}```.
 
-*__NB :__ if you use this sample project with __Saagie Data Fabric__, you can leave `{file}` as it is.*
+*NB : if you use this sample project with __Saagie Data Fabric__, you can leave `{file}` as it is.*
 
 ## Scaling
 
